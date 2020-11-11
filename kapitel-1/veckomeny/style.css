@@ -3,6 +3,9 @@ body {
 }
 table {
     background-color: coral;
+    margin-left: 280px;
+    margin-top: 50px;
+    
 }
 caption {
     font-family: 'Big Shoulders Stencil Text', cursive;
