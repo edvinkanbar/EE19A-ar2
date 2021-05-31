@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sidebar">
+            <h1>Canvas</h1>
+        </div>
+        <canvas>
+
+        </canvas>
+    </div>
+    <script>
+        const rityta = document.querySelector("Canvas");
+
+        rityta.width = 600;
+        rityta.height = 600;
+
+        var ctx = rityta.getContext("2d");
+
+        ctx.fillStyle = "orange";
+        ctx.fillRect(100, 100, 50, 50);
+        ctx.strokeStyle = "red";
+        ctx.strokeRect(200, 200, 50, 50);
+
+        ctx.font = "60px sans-serif";
+        ctx.fillText("Kebab", 100, 300);
+        ctx.strokeText("Baklava", 100, 400);
+
+    </script>
+</body>
+</html>

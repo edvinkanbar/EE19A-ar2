@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>En miniräknare</title>
+    <link rel="stylesheet" href="./prov2f.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Miniräknare</h1>
+        <h2>Input</h2>
+        <label>Ange tal 1 <input class="tal1" type="text1"></label>
+        <label>Ange tal 2 <input class="tal2" type="text2"></label>
+        
+        <button class="plus ">+</button>
+        <button class="minus">-</button>
+        <button class="gånger">x</button>
+        <button class="dividera">dividera/</button>
+        <button class="slumpa">/</button>
+        <button class="rita">Rita</button>
+
+        <h2>Output</h2>
+        <label>Svar 1 <textarea class="svar1"></textarea></label>
+        <label>Svar 2 <textarea class= "svar2"></textarea></label>
+
+        </div>
+        <script>
+        /* Börja koda här */
+        // Hitta elementen på webbsidan 
+        
+        const rutaText1 = document.querySelector(."text1");
+        const rutaText2 = document.querySelector(."text2");
+        
+        const rutaplus = document.querySelector(".plus");
+        const rutaMinus = document.querySelector(".minus");
+        const rutaGånger = document.querySelector(".gånger");
+        const rutaDividera = document.querySelector(".dividera");
+        const rutaSlumpa = document.querySelector(".slumpa");
+        const rutaRita = document.querySelector(".rita");
+
+        const rutaSvar1 = document.querySelector(".svar1");
+        const rutaSvar2 = document.querySelector(".svar2");
+
+        // När man klickar på första knappen
+         Rutaplus.addEventListener("click",function () {
+         Rutaminus.addEventListener("click",function () {
+         Rutagånger.addEventListener("click",function () {
+         Rutadividera.addEventListener("click",function () {
+         Rutaslumpa.addEventListener("click",function () {
+         Rutarita.addEventListener("click",function () {
+             //Läsa av
+             // console.log(rutaPlus.value);
+             // console.log(rutaMinus.value);
+             // console.log(rutaGånger.value);
+             // console.log(rutaDividera.value);
+             // console.log(rutaSlumpa.value);
+             // console.log(rutaRita.value);
+
+             // Lagra i variabler
+             var plus = rutaplus.value;
+             console.log(namn);
+             var minus = Rutaminus.value;
+             var gånger = Rutagånger.value;
+             var dividera = Rutagånger.value;
+             var slumpa = Rutadividera.value;
+             var rita = Rutarita.value;
+
+             //sätt samman siffror
+             var mening = plus + minus + gånger + dividera + slumpa + rita;
+            });
+
+            // Skriva ut på RutaText1
+            rutaSvar2.value = mening;
+
+            // Skriv ut i på Rutatext2
+            rutaSvar2.value = slumpa
+
+            // Reagera på rutaText1
+            rutaText1.addEventListener("click", function () {
+                // Läsa av 
+                var plus = Rutaplus.value;
+                console.log(plus);
+                var minus = rutaMinus.value;
+                var gånger = rutaGånger.value;
+                var dividera = rutaDividera.value;
+                var slumpa = rutaSlumpa.value;
+                var rita = rutaRita.value;
+
+                rutaSvar2.value = slumpa
+            })
+
+
+
+             
+              
+         })
+
+
+        
+
+
+
+        
+
+
+        ></script>
+</body>
+</html>

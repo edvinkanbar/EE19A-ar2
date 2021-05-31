@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+       //hitta elementet
+       const rityta = document.querySelector("canvas");
+
+       // ställer in storleken 
+       rityta.width = 800;
+       rityta.width = 600;
+
+       // slå på ritmotorn
+       var ctx = rityta.getContext("2d");
+
+       // rita en fyrkant 
+       //ctx.strokeRect(100, 100, 200, 200);
+       //ctx.fillRect(400, 100, 200, 200);
+
+       // Rita ett hänga gubbe
+       ctx.beginPath();
+
+       /*Marken*/
+       ctx.strokeStyle = "Green"
+       ctx.lineWidth = 5;
+       ctx.moveTo(100, 500);
+       ctx.lineTo(600, 500);
+       ctx.stroke();
+
+       /*Pålen*/
+       ctx.strokeStyle = "Brown"
+       ctx.lineWidth   = 5;
+       ctx.moveTo(200, 500);
+       ctx.lineTo(200, 100);
+       ctx.stroke();
+
+       // Balken
+       ctx.lineTo(400, 100);
+       ctx.stroke();
+       
+       // Repet 
+       ctx.lineTo (400, 150);
+       ctx.stroke();
+
+       //Huvudet
+       ctx.moveTo(450, 200);
+       ctx.arc(400, )
+
+
+
+        
+    </script>
+</body>
+</html>

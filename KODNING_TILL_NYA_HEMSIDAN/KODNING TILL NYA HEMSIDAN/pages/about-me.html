@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About me</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../jquery.js"></script>
+    <link rel="stylesheet" href="../css/about-me.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">☝</button>
+<script>
+        mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+    </script>
+    <!-- Hamburgar meny -->
+    <div class="button_container" id="toggleTest">
+        <span class="top2"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+    <script>
+        $('#toggleTest').click(function () {
+            $(this).toggleClass("active");
+            $("#overlay").toggleClass("open");
+        });
+    </script>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about-me.html">About Me</a></li>
+                <li><a href="./my-work.html">Portfolio</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <header class="top">
+        <!-- Täcker hela sidan -->
+        <div class="top-img">
+            <div class="overlay1"></div>
+            <video autoplay muted loop>
+                <source src="../img/dianaleende.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="../img/Diana1.JPG" alt=""> -->
+        </div>
+
+        <div class="header-content">
+            <div class="header-quote">
+                <p>where creativity meets performance</p>
+            </div>
+            <div class="header-h1">
+                <h1>About me</h1>
+                <div class="downbuttoncontainer">
+                <button class="downbutton" onclick="scrollDown()">⌄</button>
+                </div>
+            </div>
+            <script>
+                function scrollDown() {
+                    window.scrollTo({
+                        top: 760,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
+        </div>
+
+    </header>
+    <div>
+
+        <div class="section">
+            <div class="section-spacer-polaroid">
+                <div class="section-polaroid img">
+                    <!-- <img id="polaroid1" src="../img/polaroid_1.png" alt=""> -->
+                    <!-- <img id="polaroid2" src="../img/polaroid_5.png" alt="">
+                    <img id="polaroid3" src="../img/polaroid_6.png" alt=""> -->
+                </div>
+            </div>
+
+
+            <section class="col">
+                <div class="illustration">
+                    <img id="ill1" src="../img/illustrationer/era.svg" alt="" class="left">
+                </div>
+                <article id="text1" class="section-text right">
+                    <h1>The best era yet</h1>
+                    <p>Born in an era where one gallon of gas was 91 cents and we still had to rewind our cassettes with
+                        wooden pencils, I grew up in a Swedish/Persian home where warm yellow-white rice with saffron
+                        was combined with minimalistic furniture, and the smell of indoor-smoking was lingering around
+                        from time to time.
+                        <br>
+                        <br>
+                        Little did I know that I would grow up to become a multitalented writer & journalist, event
+                        planner & designer. But the road was long, and the bumps were too many to count.
+                        <br>
+                        <br>
+                        It’s always easy to point fingers and blame others for the hard times you go through, but for
+                        me, the important part is where we pick up our broken pieces, glance at them and try to fit them
+                        back to where they belong in us.
+                        <br>
+                        <br>
+                        During a career journey, this is truly important to remember, since most of us walk over our own
+                        pieces creating even tinier bits to put together before we climb even higher up the latter.
+
+                    </p>
+                </article>
+                </section>
+                <div class="illustration">
+                    <img id="ill2" src="../img/illustrationer/write.svg" alt="" class="right">
+                </div>
+
+
+                <article id="text2" class="section-text left">
+                    <h2>Writing as an escape</h2>
+                    <p>I still until today, remember the passion I had for writing and reading as a child. I was around 4 years old and remember climbing up in a tree with a pencil and a notepad, while watching the other kids below jumping up and down in puddles after the rain. I remember thinking to myself that I was lucky enough to know how to write, so I didn’t have the need to jump in puddles to have fun. The pen was my best friend back then, like the keyboard is today. </p>
+                </article>
+
+                <div class="illustration">
+                    <img id="ill4" src="../img/illustrationer/insp.svg" alt="" class="right">
+                </div>
+                <article id="text3" class="section-text right">
+                    <h2>My Inspiration</h2>
+                    <p>I’m one of those awkward people you see walking on the street and stopping suddenly ( [from your point of view] – for no reason ) But I honestly am just looking at a smashed flower on the ground, seeing it as art. Wondering how many people smelled that particular flower, how it got crushed, and why its laying on the ground all by itself not being seen as “beautiful” anymore. If you ever watched the retro masterpiece “Amelie from Montmartre” – you’ll get the point. 
+                        <br>
+                        <br>
+                        As a really artistic person, I find it therapeutic to write no matter the subject, and I love to combine my writing and marketing skills to create memorable work for different audiences. I also fell in love with TV & media production after my internship at WUSA9 in the United States, after trying out life as a reporter in front of the camera. 
+                    </p>
+                </article>
+            </div>
+            <!-- Lägg till citat
+            <div class="illustration">
+                <img id="ill5" src="../img/illustrationer/skills.svg" alt="">
+            </div>
+
+           <div class="myskills">
+
+                <div id="box1" class="myskills-box">
+                    <h3>2011-2013</h3>
+                    <p>Northern Virginia<br>Journalism & PR</p>
+                </div>
+                <div id="box2" class="myskills-box">
+                    <h3>2013-2014</h3>
+                    <p>Eductus Education<br>Business Economics</p>
+                </div>
+                <div id="box3" class="myskills-box">
+                    <h3>2014-2015</h3>
+                    <p>Tillskäraakademi<br>Illustrations & Design</p>
+                </div>
+            </div> 
+
+            <div class="col">
+                <div class="illustration">
+                    <img id="ill6" src="../img/illustrationer/design.svg" alt="" class="right">
+                </div>
+                <div id="text5" class="section-text right">
+                    <h2>Design is a form of art</h2>
+                    <p>See, shoes and design were important to me back then as well. I cannot say I was super shallow
+                        being
+                        4 years old, but I did have a lot more respect for what I wore than most kids I knew. I just
+                        didn’t
+                        know what to do with my passion for it until now.</p>
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <p><a href="tel:+46737778184">+4673 777 8184</a></p>
+                <p><a href="mailto:mail@dianasvensson.com">mail@dianasvensson.com</a></p>
+
+            </div>
+
+            <div class="socials">
+                <h2>SOCIALS</h2>
+
+                <p><a href="https://www.instagram.com/nordicentrepreneur/">Instagram</a></p>
+                <p><a href="https://www.linkedin.com/in/dianasvensson/">LinkedIn</a></p>
+                <p><a href="https://www.facebook.com/profile.php?id=1127477920">Facebook</a></p>
+            </div>
+            </div>
+    </footer>
+
+    <script>
+        const reveal = gsap.timeline();
+
+        // Start
+        const oneStart = "15% center"
+        const twoStart = "37% center"
+        const threeStart = "50% center"
+        const fourStart = "68% center"
+        const fiveStart = "70% center"
+        const sixStart = "80% center"
+
+        // Easing
+        const allEase = "power1.out"
+
+        // Y
+        const allY = 200
+
+
+        // H1
+        gsap.from("#text1 h1", {
+            scrollTrigger: {
+                tigger: "#text1 h1",
+                start: oneStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+
+
+        });
+
+        // P
+        gsap.from("#text1 p", {
+            scrollTrigger: {
+                tigger: "#text1 h1",
+                start: oneStart,
+
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        // Ill1
+        gsap.from("#ill1", {
+            scrollTrigger: {
+                tigger: "#ill1",
+                start: oneStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // Text 2
+
+        // H1
+        gsap.from("#text2 h2", {
+            scrollTrigger: {
+                tigger: "#text3 h2",
+                start: twoStart,
+
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // P
+        gsap.from("#text2 p", {
+            scrollTrigger: {
+                tigger: "#text3 p",
+                start: twoStart,
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        // Ill 2
+        gsap.from("#ill2", {
+            scrollTrigger: {
+                tigger: "#ill2",
+                start: twoStart,
+
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // Text 3
+
+        // H1
+        gsap.from("#text3 h2", {
+            scrollTrigger: {
+                tigger: "#text3 h2",
+                start: threeStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // P
+        gsap.from("#text3 p", {
+            scrollTrigger: {
+                tigger: "#text3 p",
+                start: threeStart,
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        // Ill 2
+        gsap.from("#ill4", {
+            scrollTrigger: {
+                tigger: "#ill4",
+                start: threeStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // Text 4
+
+        // H1
+        gsap.from("#text4 h2", {
+            scrollTrigger: {
+                tigger: "#text4 h2",
+                start: fourStart,
+
+
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // P
+        gsap.from("#text4 p", {
+            scrollTrigger: {
+                tigger: "#text4 p",
+                start: fourStart,
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        gsap.from("#ill5", {
+            scrollTrigger: {
+                tigger: "#ill5",
+                start: fourStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // Text 5
+
+        // H1
+        gsap.from(".myskills", {
+            scrollTrigger: {
+                tigger: ".myskills",
+                start: fiveStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // P
+        gsap.from("#text5 h2", {
+            scrollTrigger: {
+                tigger: ".text5 h2",
+                start: sixStart,
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        gsap.from("#text5 p", {
+            scrollTrigger: {
+                tigger: ".text5 p",
+                start: sixStart,
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        // Ill 6
+        gsap.from("#ill6", {
+            scrollTrigger: {
+                tigger: "#ill6",
+                start: sixStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+    </script>
+</body>
+</html>

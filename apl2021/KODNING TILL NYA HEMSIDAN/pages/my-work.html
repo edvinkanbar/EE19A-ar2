@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../jquery.js"></script>
+    <link rel="stylesheet" href="../css/about-me.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Hamburgar meny -->
+    <div class="button_container" id="toggleTest">
+        <span class="top2"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+    <script>
+        $('#toggleTest').click(function () {
+            $(this).toggleClass("active");
+            $("#overlay").toggleClass("open");
+        });
+    </script>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about-me.html">About Me</a></li>
+                <li><a href="./my-work.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="top">
+        <div class="lines">
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+        </div>
+        <!-- Täcker hela sidan -->
+        <div class="top-img">
+            <div class="overlay1"></div>
+            <video autoplay muted loop>
+                <source src="../img/dianaallvarlig.mp4" type="video/mp4">
+            </video>
+            <!-- <img src="../img/Diana1.JPG" alt=""> -->
+        </div>
+
+        <div class="header-content">
+            <div class="header-quote">
+                <p>where creativity meets performance</p>
+            </div>
+            <div class="header-h1">
+                <h1>Portfolio</h1>
+            </div>
+           
+            <div class="arrow"><svg class="arrow-down" viewBox="11.247 7.875 12.293 22.099">
+                    <path
+                        d="M 23.30478286743164 21.96780586242676 C 22.98468208312988 21.57633972167969 22.45331382751465 21.57633972167969 22.12681007385254 21.96013069152832 L 18.22797393798828 26.61935234069824 L 18.22797393798828 8.865180969238281 C 18.22797393798828 8.320197105407715 17.85665702819824 7.875 17.39570999145508 7.875 C 16.93476486206055 7.875 16.56344795227051 8.320197105407715 16.56344795227051 8.865180969238281 L 16.56344795227051 26.61935043334961 L 12.66461181640625 21.95245361328125 C 12.33810806274414 21.56866264343262 11.81314277648926 21.57633781433105 11.48663902282715 21.96012878417969 C 11.16653728485107 22.35159492492676 11.16653728485107 22.97333717346191 11.49304103851318 23.36480331420898 L 16.80672645568848 29.6896800994873 C 16.80672645568848 29.6896800994873 16.80672645568848 29.6896800994873 16.80672645568848 29.6896800994873 C 16.8835506439209 29.77411270141602 16.96677589416504 29.84319496154785 17.0692081451416 29.89692687988281 C 17.17164039611816 29.95065879821777 17.28047370910645 29.97368431091309 17.38930892944336 29.97368431091309 C 17.60697937011719 29.97368431091309 17.81184196472168 29.87389945983887 17.97189331054688 29.6896800994873 L 23.28557777404785 23.36480331420898 C 23.61848258972168 22.98869132995605 23.62488555908203 22.35927391052246 23.30478286743164 21.96780586242676 Z">
+                    </path>
+                </svg></div>
+        </div>
+
+    </header>
+    <div>
+
+        <div class="section">
+            <div class="section-spacer-polaroid">
+                <div class="section-polaroid img">
+                    <!-- <img id="polaroid1" src="../img/polaroid_1.png" alt=""> -->
+                    <!-- <img id="polaroid2" src="../img/polaroid_5.png" alt="">
+                    <img id="polaroid3" src="../img/polaroid_6.png" alt=""> -->
+                </div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="illustration">
+                    <img id="ill1" src="../img/illustrationer/resume-blue.svg" alt="" class="left">
+                </div>
+                <div id="text1" class="section-text right">
+                    <h1>Previous work</h1>
+                    <p>I started my career at the sales floor at H&M. Their business had just bloomed, and they were the label on everyone’s lips. I got an internship where I quickly fell in love with the connection I got from the customers – and the insane amount of feedback I got for my customer service.
+                        <br>
+                        <br>
+                        But a few comments I received stuck to my mind and heart. Many of them was about me being able to lift the details in every product I managed to sell to them, or the fact that I knew exactly how to market the different items by describing what they would go with, what situation to use it in and where to dress in a particular way. 
+                    
+                    </p>
+                </div>
+
+                <div class="illustration">
+                    <img id="ill2" src="../img/illustrationer/resume-folder-blue.svg" alt="" class="right">
+                </div>
+
+
+                <div id="text2" class="section-text left">
+                    <h1>The real deal</h1>
+                    <p>That lead me to my first real job ever. <br><br>
+                        Originally, I was hired to recruit customers for the customer clubs that the company had in the different shopping malls in Scandinavia, but they quickly learned that my ability to sell and advertise was beyond what they were offering me, so 6 months later I became the youngest employee to ever be responsible for 11 shopping malls. Over 1000 stores and also have the ability to recruit a sales team that was out working the fields I was employed for in the beginning. <br> <br>
+                        A big leap? Don’t think so. <br><br>
+                        When we felt that my job was done at the startup, and it was time for me to spread my wings wider, I decided to move to jobs where I could combine the skills I’ve learned at Light Agency together with my intense curiosity to learn more. 
+
+                     </p>
+                </div>
+
+                <div class="illustration">
+                    <img id="ill4" src="../img/illustrationer/skills.svg" alt="" class="right">
+                </div>
+                <div id="text3" class="section-text right">
+                    <p class="cursive">2018-2019</p>
+                    <h2>Nordic Marketing Manager | Colart </h2>
+                    <p>With this role, I put my knowledge to use and showed off my skills by being the head of the Nordic market for 7 world leading fine-art brands. Along with responsibility for my recruited employees and strategy planning for sales training courses, I got to create events and campaigns for our various brands resellers in the Nordic market. </p>
+                    <div class="spacer"></div>
+                    <p class="cursive">2017-2019 - Freelancer</p>
+                    <h2>Editor |  Dagens Industri  </h2>
+                    <p>I wrote articles and worked with copywriting for print & digital publications in a luxury fashion and consumption magazine. I used WordPress and Dotmailer to write my work, with the focus on marketing various brands in the luxury segment. </p>
+                    <div class="spacer"></div>
+                    <p class="cursive">2016-2018</p>
+                    <h2>Store Manager |  Victoria’s Secret</h2>
+                    <p>In this role, I had responsibility of staff & budgeting where the focus was on additional sales, training, and planning of physical campaigns in the store. I also had to design and create sales competitions to motivate my staff and analyze key figures hour by hour in order to improve our results on a daily basis. It also included scheduling for a larger (10+) number of employees and regularly recruiting new people at store openings or holidays. </p>
+                    
+                </div>
+                <div class="illustration">
+                    <img id="ill5" src="../img/illustrationer/career.svg" alt="" class="right">
+                </div>
+                <div id="text4" class="section-text left">
+                    <p class="cursive">2014-2016 - Project employment </p>
+                    <h2>PR Consultant | Aftonbladet AB  </h2>
+                    <p>The role for this position meant that I was primarily responsible for the Swedish newspaper's exposure in stores, with the goal of raising sales figures and achieving daily budget goals for each area in Stockholm. The work involved daily travel by company car and careful planning of visual marketing depending on the store's design, size, customer traffic and planogram.  </p>
+                    <div class="spacer"></div>
+                    <p class="cursive">2013-2016 - Freelancer</p>
+                    <h2>Journalist | Butikstrender  </h2>
+                    <p>Entertainment & trade writer for one of Sweden's largest trade magazines. The position included event photography, interviewing, copywriting, news journalism, and planning of both internal and public events. It was also important to stay up to date and keep up with trends in the food, trade and entertainment industry, and to always be one (or a few!) steps ahead of the competition.  </p>
+                    <div class="spacer"></div>
+                    <p class="cursive">2011-2013</p>
+                    <h2>Broadcast Journalist | WUSA9 TV </h2>
+                    <p>Journalist & reporter for one of the largest TV stations in the United States. WUSA9 has both a global and local journalistic focus where local news and programs are most popular. I worked mainly covering press conferences held by Barack Obama and Joe Biden, in Capitol Hill - Washington D.C. I also wrote press releases, newsletters, newspaper articles, and blog posts for the station.  </p>
+                    
+                </div>
+            </div>
+            <!-- <div class="illustration">
+                <img id="ill7" src="../img/illustrationer/resume-folder.svg" alt="">
+            </div> -->
+
+            <!-- <div class="myskills">
+
+                <div id="box1" class="myskills-box">
+                    <h3>2011-2013</h3>
+                    <p>Northern Virginia<br>Journalism & PR</p>
+                </div>
+                <div id="box2" class="myskills-box">
+                    <h3>2013-2014</h3>
+                    <p>Eductus Education<br>Business Economics</p>
+                </div>
+                <div id="box3" class="myskills-box">
+                    <h3>2014-2015</h3>
+                    <p>Tillskäraakademi<br>Illustrations & Design</p>
+                </div>
+
+            </div> -->
+
+            <div class="col">
+                <div class="illustration">
+                    <img id="ill6" src="../img/illustrationer/current.svg" alt="" class="right">
+                </div>
+                <div id="text5" class="section-text right">
+                    <h2>Current Work</h2>
+                    <p>Since my recent work had to move their office outside of Stockholm city, I had no choice but to leave the company and the position I so dearly loved. So, at the moment - I am looking for a new role in marketing or journalism where I can shine my brightest, and combine all the years of experience I have, to create great results. <br><br> I see myself in a position where I am self-going, can be creative, have responsibilities for projects, duties or timelines, and where I can contribute by copywriting, news covering or use my reporting skills. I also see some of my work involving business advising, product development, event creation or setting up marketing strategies for a targeted group. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <div class="footer">
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <p><a href="#">+4673 777 8184</a></p>
+                <p><a href="#">mail@dianasvesson.com</a></p>
+                
+            </div>
+
+            <div class="socials">
+                <h2>SOCIALS</h2>
+                
+                <p><a href="https://www.instagram.com/nordicentrepreneur/">Instagram</a></p>
+                <p><a href="https://www.linkedin.com/in/dianasvensson/">LinkedIn</a></p>
+                <p><a href="https://www.facebook.com/profile.php?id=1127477920">Facebook</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const reveal = gsap.timeline();
+
+        // Start
+        const oneStart = "15% center"
+        const twoStart = "27% center"
+        const threeStart = "40% center"
+        const fourStart = "65% center"
+        const fiveStart = "70% center"
+        const sixStart = "80% center"
+
+        // Easing
+        const allEase = "power1.out"
+
+        // Y
+        const allY = 200
+
+
+        // H1
+        gsap.from("#text1 h1", {
+            scrollTrigger: {
+                tigger: "#text1 h1",
+                start: oneStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+
+
+        });
+
+        // P
+        gsap.from("#text1 p", {
+            scrollTrigger: {
+                tigger: "#text1 h1",
+                start: oneStart,
+
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        // Ill1
+        gsap.from("#ill1", {
+            scrollTrigger: {
+                tigger: "#ill1",
+                start: oneStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // Text 2
+
+        // H1
+        gsap.from("#text2 h2", {
+            scrollTrigger: {
+                tigger: "#text3 h2",
+                start: twoStart,
+                
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // P
+        gsap.from("#text2 p", {
+            scrollTrigger: {
+                tigger: "#text3 p",
+                start: twoStart,
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        // Ill 2
+        gsap.from("#ill2", {
+            scrollTrigger: {
+                tigger: "#ill2",
+                start: twoStart,
+                
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // Text 3
+
+        // H1
+        gsap.from("#text3 h2", {
+            scrollTrigger: {
+                tigger: "#text3 h2",
+                start: threeStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // P
+        gsap.from("#text3 p", {
+            scrollTrigger: {
+                tigger: "#text3 p",
+                start: threeStart,
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        // Ill 2
+        gsap.from("#ill4", {
+            scrollTrigger: {
+                tigger: "#ill4",
+                start: threeStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // Text 4
+
+        // H1
+        gsap.from("#text4 h2", {
+            scrollTrigger: {
+                tigger: "#text4 h2",
+                start: fourStart,
+
+
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // P
+        gsap.from("#text4 p", {
+            scrollTrigger: {
+                tigger: "#text4 p",
+                start: fourStart,
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        gsap.from("#ill5", {
+            scrollTrigger: {
+                tigger: "#ill5",
+                start: fourStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // Text 5
+
+        // H1
+        gsap.from(".myskills", {
+            scrollTrigger: {
+                tigger: ".myskills",
+                start: fiveStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+
+        // P
+        gsap.from("#text5 h2", {
+            scrollTrigger: {
+                tigger: ".text5 h2",
+                start: sixStart,
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        gsap.from("#text5 p", {
+            scrollTrigger: {
+                tigger: ".text5 p",
+                start: sixStart,
+            },
+            y: allY,
+            duration: 1,
+            delay: 0.1,
+            opacity: 0,
+            ease: allEase
+        });
+        // Ill 6
+        gsap.from("#ill6", {
+            scrollTrigger: {
+                tigger: "#ill6",
+                start: sixStart,
+            },
+            y: allY,
+            duration: 1,
+            opacity: 0,
+            ease: allEase
+        });
+    </script>
+</body>
+
+</html>
