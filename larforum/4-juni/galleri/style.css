@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./bilder/catalina-johnson-inbePXjTh-A-unsplash.jpg);
+    background-attachment: fixed;
+}
+div.sida {
+    width: 800px;
+    background-color: rgb(250, 235, 215);
+    margin: 0 auto;
+    padding: 35px;
+    box-shadow: 0 0 30px black;
+}
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+div.foto {
+    background-color: burlywood;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 30px 20px brown;
+}
+img {
+    width: 400px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 50px;
+}
+p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+hr {
+    clear: both;
+    visibility: hidden;
+}
+div.edvin {
+    font-family:  'Amatic SC', cursive;
+    color: blue;
+}
+p.kanbar {
+    font-size: 28px;
+}
