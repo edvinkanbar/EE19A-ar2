@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Staatliches&family=ZCOOL+KuaiLe&display=swap');
+/* CSS HEX */
+:root {
+    --xiketic: #03071eff;
+--dark-sienna: #370617ff;
+--rosewood: #6a040fff;
+--dark-red: #9d0208ff;
+--rosso-corsa: #d00000ff;
+--vermilion: #dc2f02ff;
+--persimmon: #e85d04ff;
+--carrot-orange: #f48c06ff;
+--orange-web: #faa307ff;
+--selective-yellow: #ffba08ff;
+}
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+/* Mina Regler */
+body {
+    background: var(--rosewood);
+}
+
+div {
+    background: var(--dark-sienna);
+    width: 800px;
+    margin: auto;
+    padding: 50px;
+    color: var(--rosewood);
+}
+
+h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: 70px;
+    color: var(--dark-red);
+}
+
+ul {
+    font-family: 'Staatliches', cursive;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    background: var(--persimmon);
+    padding: 5px;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+a.aktiv {
+    background: var(--selective-yellow);
+}
+
+h2 {
+    font-family: 'Special Elite', cursive;
+    margin: 20px 0;
+    color: var(--rosso-corsa);
+}
+
+p {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: var(--selective-yellow);
+}
+
+img {
+    width: 100%;
+}
