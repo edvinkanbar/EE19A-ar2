@@ -75,10 +75,14 @@ a {
     font-family: 'ZCOOL KuaiLe', cursive;
     padding: 10px;
 }
+a.aktiv {
+    color: yellow;
+}
 
 main {
     background-color: white;
     padding: 50px;
+    border-radius: 5px;
 }
 
 p {
